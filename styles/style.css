@@ -362,7 +362,6 @@ main {
     width: 720px;
     height: 610px;
     position: relative;
-    background-color: #0c4669;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -380,7 +379,6 @@ main {
 .bigImage {
     width: 720px;
     height: 610px;
-    opacity: 0.3;
 }
 
 .threeImageMainBlock {
@@ -419,7 +417,6 @@ main {
 .apartSmallImage {
     margin: 24px;
     margin-top: -0px;
-    background-color: #0c4669;
     width: 311px;
     height: 269px;
     position: relative;
@@ -454,21 +451,17 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #0c4669;
 }
 
 .smallImage {
     width: 311px;
     height: 269px;
-    opacity: 0.3;
     margin: 24px;
 }
 
 .halfSizeImage {
     width: 669px;
     height: 269px;
-    background-color: #0c4669;
-    opacity: 0.3;
 }
 
 .imageText {
@@ -505,8 +498,7 @@ main {
     text-align: center;
 }
 
-
-/*.overlay {
+.overlay {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -521,7 +513,7 @@ main {
     left: 0;
     bottom: 0;
     background-color: rgba(12, 70, 105, 0.8);
-}*/
+}
 
 footer {
     display: -webkit-box;
@@ -699,4 +691,43 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.hoverBigImage {
+    height: 720px;
+    overflow: hidden;
+}
+
+.hoverBigImage .bigImage {
+    transition: transform .5s ease;
+}
+
+.hoverBigImage:hover .bigImage {
+    transform: scale(1.5);
+}
+
+.hoverSmallImage {
+    height: 269px;
+    overflow: hidden;
+}
+
+.hoverSmallImage .smallImage {
+    transition: transform .5s ease;
+}
+
+.hoverSmallImage:hover .smallImage {
+    transform: scale(1.5);
+}
+
+.hoverHalfSize {
+    height: 269px;
+    overflow: hidden;
+}
+
+.hoverHalfSize .halfSizeImage {
+    transition: transform .5s ease;
+}
+
+.hoverHalfSize:hover .halfSizeImage {
+    transform: scale(1.5);
 }
