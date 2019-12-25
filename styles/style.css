@@ -98,27 +98,6 @@ video {
     vertical-align: baseline;
 }
 
-html {
-    min-width: 1600px;
-}
-
-#mainBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-}
-
 .logo-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,12 +115,12 @@ html {
     margin-right: 150px;
 }
 
-#logo {
+.logo {
     width: 205px;
     height: 77px;
 }
 
-#search_Icon {
+.icon {
     margin-left: 200px;
 }
 
@@ -155,37 +134,12 @@ a {
     text-decoration: none;
 }
 
-header {
-    background: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 80%;
-}
-
-#mainSearchBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 245px;
-    font-weight: 900;
-}
 
 .navigathion-menu {
-    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigathion-menu li {
@@ -208,51 +162,12 @@ header {
     color: #aed3e4;
 }
 
-@media (max-width: 600px) {
-    body {
-        font-size: 80%;
-    }
-}
-
-#mainContentBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    width: 80%;
-    height: 450px;
-}
-
 .mainBlock {
     background-color: #e6f0f5;
-    width: 100%;
-    height: 700px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-#mainPageBlock {
-    width: 100%;
-    height: 1000px;
+    max-width: 100%;
+    width: 1846px;
+    max-height: 100%;
+    height: 942px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -282,47 +197,15 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    height: 150px;
+    height: 15%;
+    background-color: #ffffff;
 }
 
-#headerBlock {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: white;
-    width: 60%;
-    height: 150px;
-}
 
-.menuBlock {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 
 main {
     width: 100%;
-    height: 700px;
+    height: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,12 +222,13 @@ main {
 }
 
 .imagesMainBlock {
-    /*position: relative;*/
-    margin-top: 40px;
-    width: 75%;
+    width: 1840px;
+    max-width: 100%;
+    height: 100%; 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -359,8 +243,6 @@ main {
 
 .bigImageMainBlock {
     margin: 24px;
-    width: 720px;
-    height: 610px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -377,11 +259,13 @@ main {
 }
 
 .bigImage {
+    max-width: 100%;
     width: 720px;
     height: 610px;
 }
 
 .threeImageMainBlock {
+    margin: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -397,7 +281,6 @@ main {
 }
 
 .smallImageMainBlock {
-    height: 200;
     z-index: 1;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -417,8 +300,6 @@ main {
 .apartSmallImage {
     margin: 24px;
     margin-top: -0px;
-    width: 311px;
-    height: 269px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,9 +316,6 @@ main {
 }
 
 .halfSizeImageMainBlock {
-    margin-top: 50px;
-    width: 669px;
-    height: 269px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -451,15 +329,17 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 52px;
 }
 
 .smallImage {
+    max-width: 100%;
     width: 311px;
     height: 269px;
-    margin: 24px;
 }
 
 .halfSizeImage {
+    max-width: 100%;
     width: 669px;
     height: 269px;
 }
@@ -498,6 +378,62 @@ main {
     text-align: center;
 }
 
+.linkMainBlock {
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoverBigImage {
+    position: relative;/* */
+    width:100%; /* */
+    height: 100%; /* */ 
+    overflow: hidden;
+}
+
+.hoverBigImage .bigImage {
+    transition: transform .5s ease;
+}
+
+.hoverBigImage:hover .bigImage {
+    transform: scale(1.5);
+}
+
+.hoverSmallImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    height: 269px;
+    overflow: hidden;
+}
+
+.hoverSmallImage .smallImage {
+    transition: transform .5s ease;
+}
+
+.hoverSmallImage:hover .smallImage {
+    transform: scale(1.5);
+}
+
+.hoverHalfSize {
+    width: 100%;
+    position: relative;
+    height: 269px;
+    overflow: hidden;
+}
+
+.hoverHalfSize .halfSizeImage {
+    transition: transform .5s ease;
+}
+
+.hoverHalfSize:hover .halfSizeImage {
+    transform: scale(1.5);
+}
+
+
 .overlay {
     display: flex;
     position: absolute;
@@ -508,7 +444,6 @@ main {
     height: 100%;
     z-index: 100%;
     position: absolute;
-    margin-top: 100px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -530,7 +465,7 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: 15%;
 }
 
 .footerBlock {
@@ -548,7 +483,7 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: 15%;
     background-color: white;
 }
 
@@ -693,41 +628,3 @@ footer {
     align-items: flex-end;
 }
 
-.hoverBigImage {
-    height: 720px;
-    overflow: hidden;
-}
-
-.hoverBigImage .bigImage {
-    transition: transform .5s ease;
-}
-
-.hoverBigImage:hover .bigImage {
-    transform: scale(1.5);
-}
-
-.hoverSmallImage {
-    height: 269px;
-    overflow: hidden;
-}
-
-.hoverSmallImage .smallImage {
-    transition: transform .5s ease;
-}
-
-.hoverSmallImage:hover .smallImage {
-    transform: scale(1.5);
-}
-
-.hoverHalfSize {
-    height: 269px;
-    overflow: hidden;
-}
-
-.hoverHalfSize .halfSizeImage {
-    transition: transform .5s ease;
-}
-
-.hoverHalfSize:hover .halfSizeImage {
-    transform: scale(1.5);
-}
