@@ -233,12 +233,13 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: normal;
+    -ms-flex-align: normal; /* обратить внимание, если что-то сломалось*/
+    align-items: normal;
+    /*margin: 32px;*/
 }
 
 .bigImageMainBlock {
@@ -256,6 +257,7 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
 }
 
 .bigImage {
@@ -274,10 +276,11 @@ main {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
+    justify-content: space-between;
+    -webkit-box-align: center; /*если что-то сломалось, обратить внимание*/
     -ms-flex-align: center;
-    align-items: center;
+    align-items: normal;
+    width: 100%;
 }
 
 .smallImageMainBlock {
@@ -298,8 +301,8 @@ main {
 }
 
 .apartSmallImage {
-    margin: 24px;
-    margin-top: -0px;
+   /* margin: 24px;*/
+   /* margin-top: -0px;*/
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -329,7 +332,7 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 52px;
+    /*margin: 24px; /**/
 }
 
 .smallImage {
@@ -465,7 +468,6 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    height: 15%;
 }
 
 .footerBlock {
@@ -489,7 +491,7 @@ footer {
 
 .footerGeneralBlock {
     margin-top: 10px;
-    width: 90%;
+    width: 96%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -561,7 +563,7 @@ footer {
 .footerNetworksLinks {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     width: 350px;
     height: 150px;
